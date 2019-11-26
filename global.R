@@ -1,8 +1,8 @@
 #############################################
-#                                           #    
+#                                           #
 #               APP SENDIS                  #
 #  Author: F.Michel-Sendis                  #
-#                                           #  
+#                                           #
 #############################################
 
 if (system.file(package="DT") == "")          install.packages("DT")
@@ -17,20 +17,21 @@ if (system.file(package="shinythemes") == "") install.packages("shinythemes")
 if (system.file(package="shinyjs") == "")     install.packages("shinyjs")
 if (system.file(package="splitstackshape") == "") install.packages("splitstackshape")
 if (system.file(package="testthat") == "")    install.packages("testthat")
-if (system.file(package="devtools") == "")    install.packages("devtools")  
+if (system.file(package="devtools") == "")    install.packages("devtools")
 
+if (system.file(package="sendis") == "")     install_github("fmichelsendis/sendis")
 
 suppressPackageStartupMessages({
 library(DT)
 library(data.table)
 library(tidyverse)
-library(shiny) 
+library(shiny)
 library(stringr)
 library(plotly)
 library(ggplot2)
 library(shinydashboard)
 library(shinythemes)
-library(shinyjs)  
+library(shinyjs)
 library(splitstackshape)
 library(devtools)
 library(sendis)
@@ -38,5 +39,3 @@ library(sendis)
 
 #sens<-sendis::sens%>%arrange(ISOTOPE)
 df<-sendis::sendis
- 
-
